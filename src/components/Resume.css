@@ -1,0 +1,439 @@
+.resume {
+  background-color: var(--bg-primary);
+}
+
+.resume-download {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.resume-note {
+  margin-top: 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.resume-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--bg-secondary);
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.resume-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.resume-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.resume-section-title {
+  font-size: 1.8rem;
+  color: var(--accent-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  border-left: 4px solid var(--accent-primary);
+  padding-left: 1rem;
+}
+
+.resume-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.resume-info-grid div {
+  color: var(--text-secondary);
+}
+
+.resume-info-grid a {
+  color: var(--accent-primary);
+  text-decoration: none;
+}
+
+.resume-info-grid a:hover {
+  text-decoration: underline;
+}
+
+.resume-text {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.education-item {
+  margin-bottom: 2rem;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.education-header h4 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.education-year {
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
+.education-details {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.relevant-courses {
+  margin-top: 1rem;
+}
+
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.course-tag {
+  background: var(--bg-primary);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.skills-resume {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skill-group strong {
+  color: var(--accent-primary);
+  font-size: 1rem;
+}
+
+.skill-group span {
+  color: var(--text-secondary);
+}
+
+.project-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-primary);
+}
+
+.project-item h4 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.project-item p {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.project-tech {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* New Project-Focused Resume Styles */
+.project-item-resume {
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background: var(--bg-primary);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.project-item-resume:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
+.project-header-resume {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-header-resume h4 {
+  color: var(--text-primary);
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex: 1;
+}
+
+.project-github-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--accent-primary);
+}
+
+.project-github-link:hover {
+  background: var(--accent-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.project-summary-resume {
+  color: var(--accent-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.project-description-resume {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-details-resume {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail-item {
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-primary);
+}
+
+.project-detail-item strong {
+  color: var(--accent-primary);
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.project-detail-item p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.project-tech-resume {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.project-tech-resume strong {
+  color: var(--accent-primary);
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.tech-tags-resume {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tech-tag-resume {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 0.4rem 0.9rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.tech-tag-resume:hover {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--accent-primary);
+  transform: scale(1.05);
+}
+
+/* Brief Projects List Styles */
+.projects-brief-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-brief-item {
+  background: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.project-brief-item:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-primary);
+  transform: translateY(-3px);
+}
+
+.project-brief-item h4 {
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.project-brief-item p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.project-brief-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.project-brief-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.cert-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--bg-primary);
+  border-radius: 8px;
+}
+
+.cert-item h4 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.cert-item p {
+  color: var(--text-secondary);
+  margin-bottom: 0.3rem;
+}
+
+.cert-id {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.achievements-list {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements-list li {
+  color: var(--text-secondary);
+  padding: 0.8rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.achievements-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-primary);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .resume-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .resume-section-title {
+    font-size: 1.5rem;
+  }
+
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-header-resume {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-item-resume {
+    padding: 1.5rem;
+  }
+
+  .project-header-resume h4 {
+    font-size: 1.3rem;
+  }
+
+  .project-github-link {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
